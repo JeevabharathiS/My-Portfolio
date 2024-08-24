@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" href="./assets/icon2.png" type="image/png">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='./index.html'">ஜீவபாரதி</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html#experience">Experience</a></li>
+                <li><a href="./index.html#project">Project</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="location.href='./index.html'">ஜீவபாரதி</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="./index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="./index.html#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="./index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <br>
+        <br>
+        <p class="section__text__p1">Just in case</p>
+        <h1 class="title">My Academic Scores</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Grade</th>
+                        <th>Year</th>
+                        <th>Scores</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10th Grade</td>
+                        <td>2019-2020</td>
+                        <td>70%</td>
+                    </tr>
+                    <tr>
+                        <td>12th Grade</td>
+                        <td>2021-2022</td>
+                        <td>86%</td>
+                    </tr>
+                    <tr>
+                        <td>Btech</td>
+                        <td>2022-present</td>
+                        <td>8.03</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </section>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon">
+                <p><a href="mailto:jeevabharathiedu@gmail.com">jeevabharathiedu@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LI icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/jeevabharathi-s-aa2062248/">LinkedIn</a></p>
+            </div>
+                <button class="btn btn-color-2 query-btn" onclick="location.href='./query.html'">Query</button>
+        </div>
+    </section>
+</body>
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html#experience">Experience</a></li>
+                <li><a href="./index.html#project">Project</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p class="footer-text">அறிவற்றங் காக்குங் கருவி செறுவார்க்கும்<br>உள்ளழிக்க லாகா அரண்</p>
+</footer>
+<script src="script.js"></script>

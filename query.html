@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" href="./assets/icon2.png" type="image/png">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='./index.html'">ஜீவபாரதி</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html#experience">Experience</a></li>
+                <li><a href="./index.html#project">Project</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+                <li><a href="./page2.html">Academics</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="location.href='./index.html'">ஜீவபாரதி</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="./index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="./index.html#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="./index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="./page2.html" onclick="toggleMenu()">Academics</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="QueryForm">
+        <p class="section__text__p1">If you Have any Query</p>
+        <h1 class="title">Fill the Below Form</h1>
+        <div class="query-container">
+            <form action="submit_query.php" method="POST">
+                <input type="email" id="email" name="email" placeholder="Your Email"  required><br><br>
+
+                <input type="text" id="subject" name="subject" placeholder="Subject" required><br><br>
+
+                <textarea id="message" name="message" rows="8" placeholder="Message" required></textarea><br><br>
+                <div class="submit-btn-container">    
+                    <input type="submit" class="btn btn-color-2 submit-btn" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html#experience">Experience</a></li>
+                <li><a href="./index.html#project">Project</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+                <li><a href="./page2.html">Academics</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p class="footer-text">அறிவற்றங் காக்குங் கருவி செறுவார்க்கும்<br>உள்ளழிக்க லாகா அரண்</p>
+</footer>
