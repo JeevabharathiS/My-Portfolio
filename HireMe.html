@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Jeeva</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" href="./assets/icon2.png" type="image/png">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='./index.html'">ஜீவபாரதி</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html#experience">Experience</a></li>
+                <li><a href="./index.html#project">Project</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+                <li><a href="./page2.html">Academics</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="location.href='./index.html'">ஜீவபாரதி</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="./index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="./index.html#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="./index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="./page2.html" onclick="toggleMenu()">Academics</a></li>
+            </div>
+        </div>
+    </nav>
+        <p class="section__text__p1 hm">If you wanna Hire me as a Freelancer</p>
+        <h1 class="title">Fill the Below Form</h1>
+        <div class="query-container">
+            <form action="submit_query.php" method="POST">
+                <div class="fname-containers">
+                    <input type="text" id="fname" name="fname" placeholder="First Name"  required>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name"  required>
+                </div>
+                <input type="text" id="og_name" name="og_name" placeholder="Organization Name" required><br><br>
+                <div class="fname-containers">
+                    <input type="email" id="email" name="email" placeholder="Email"  required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="fname-containers pf" style="color: rgb(53, 53, 53);">
+                    <label for="preferred_contact">Preferred Contact:</label>
+                    <div class="radi"><input type="radio" id="contact_email" name="preferred_contact" value="email" required>
+                    <label for="contact_email">Email</label></div>
+                    <div class="radi"><input type="radio" id="contact_phone" name="preferred_contact" value="phone" required style="margin-left: 20px;">
+                    <label for="contact_phone">Phone</label></div>
+                </div>
+                <textarea id="job_des" name="job_des" rows="8" placeholder="Job Description" required></textarea><br><br>
+                <div class="fname-containers ti" style="color: rgb(53, 53, 53);">
+                    <label for="due_date">I want my work to be done within:</label>
+                    <input type="date" id="due_date" name="due_date" required>
+                </div>
+                <input type="text" id="budget" name="budget" placeholder="Your Budget (in Rupees)" required>
+                
+                <div class="submit-btn-container">    
+                    <input type="submit" class="btn btn-color-2 submit-btn" value="Submit">
+                </div>
+            </form>
+        </div>
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html#experience">Experience</a></li>
+                <li><a href="./index.html#project">Project</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+                <li><a href="./page2.html">Academics</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p class="footer-text">அறிவற்றங் காக்குங் கருவி செறுவார்க்கும்<br>உள்ளழிக்க லாகா அரண்</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
