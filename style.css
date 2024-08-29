@@ -548,6 +548,8 @@ textarea {
 }
 
 .ti{
+    display: flex;
+    align-items: center; 
     margin-top: 0.2rem;
     margin-left: 0.5rem;
     gap: 0.5rem;
@@ -567,3 +569,16 @@ input[type="radio"] {
  .radi{
     display: flex;
  }
+
+ input[type="date"] {
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    margin-left: 1rem;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: rgb(250, 250, 250);
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163) ;
+    border-radius: 1rem;
+    }
