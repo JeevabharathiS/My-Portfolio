@@ -463,8 +463,8 @@ tr:last-child td {
 }
 
 form {
-    width: 600px;
-    min-width: 300px;
+    width: 700px;
+    min-width: 100px;
     margin: auto;
     padding-bottom: 2rem;
 }
